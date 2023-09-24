@@ -127,6 +127,8 @@ dist
 
 # public
 
+build
+
 # vuepress build output
 
 .vuepress/dist

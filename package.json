@@ -1,9 +1,25 @@
 {
-  "name": "@virtual-dnd",
+  "name": "virtual-dnd",
+  "version": "0.0.1",
+  "description": "Virtual Dnd dev tools to help developers build and create new extensions for anyone to use.",
   "module": "index.ts",
   "type": "module",
+  "keywords": [
+    "virtual",
+    "dnd",
+    "solid",
+    "typescript",
+    "dev",
+    "tools",
+    "vdd dev tools"
+  ],
+  "files": [
+    "build",
+    "index.ts",
+    "src/**/*"
+  ],
   "scripts": {
-    "build": "tsc",
+    "build": "bun build ./index.ts --outdir ./build --jsx-import-source solid-js",
     "test": "",
     "prepare": "husky install"
   },
