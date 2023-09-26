@@ -20,8 +20,10 @@
   ],
   "scripts": {
     "build": "bun build ./index.ts --outdir ./build --jsx-import-source solid-js",
-    "test": "",
-    "prepare": "husky install"
+    "lint:js": "eslint --max-warnings=0 --ext .js,.ts,.tsx .",
+    "lint:ts": "tsc --noEmit",
+    "prepare": "husky install",
+    "test": ""
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^6.7.2",
