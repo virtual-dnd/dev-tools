@@ -1,11 +1,11 @@
 [install]
-# set a default registry
+
 registry = { url = "https://registry.npmjs.org", token = "$npm_token" }
 
 [install.scopes]
-# set a default scope
+
 "@virtual-dnd" = { token = "$npm_token", url = "https://registry.npmjs.org", acess = "public" }
 
-[jsx]
-# set the default jsx to solid
-jsx = "solid"
+[test]
+
+preload = "./happydom.ts"

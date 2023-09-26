@@ -1,5 +1,5 @@
-const ERROR = 2
-const WARN = 1
+// const ERROR = 2
+// const WARN = 1
 
 module.exports = {
   env: {
