@@ -23,9 +23,11 @@
     "lint:js": "eslint --max-warnings=0 --ext .js,.ts,.tsx .",
     "lint:ts": "tsc --noEmit",
     "prepare": "husky install",
-    "test": ""
+    "test": "bun test --watch",
+    "test:ci": "bun test --coverage"
   },
   "devDependencies": {
+    "@happy-dom/global-registrator": "^12.2.0",
     "@typescript-eslint/eslint-plugin": "^6.7.2",
     "@typescript-eslint/parser": "^6.7.2",
     "bun-types": "latest",
@@ -34,11 +36,12 @@
     "eslint-plugin-solid": "^0.13.0",
     "husky": "^8.0.3",
     "lint-staged": "^14.0.1",
-    "prettier": "^3.0.3"
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2"
   },
   "peerDependencies": {
     "solid-js": "*",
-    "typescript": "^5.0.0"
+    "typescript": "^5.2.2"
   },
   "lint-staged": {
     "*.{ts,tsx,js}": "eslint --cache --fix",
