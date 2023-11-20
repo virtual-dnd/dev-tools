@@ -1,17 +1,11 @@
 {
-  "name": "virtual-dnd",
-  "version": "0.0.1",
-  "description": "Virtual Dnd dev tools to help developers build and create new extensions for anyone to use.",
-  "module": "index.ts",
+  "name": "nurl",
+  "version": "0.0.0",
+  "description": "Nurl open source tools to help developers build and create new extensions for anyone to use.",
   "type": "module",
-  "keywords": [
-    "virtual",
-    "dnd",
-    "solid",
-    "typescript",
-    "dev",
-    "tools",
-    "vdd dev tools"
+  "workspaces": [
+    "packages/*",
+    "tests"
   ],
   "files": [
     "build",
@@ -47,5 +41,16 @@
   "lint-staged": {
     "*.{ts,tsx,js}": "eslint --cache --fix",
     "*.{ts,tsx,js,cjs,md}": "prettier --write"
-  }
+  },
+  "keywords": [
+    "nurl",
+    "dnd",
+    "warhammer",
+    "ttrpg",
+    "solid",
+    "typescript",
+    "dev",
+    "tools",
+    "nurl dev tools"
+  ]
 }
