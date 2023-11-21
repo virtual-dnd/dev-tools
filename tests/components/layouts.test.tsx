@@ -1,16 +1,16 @@
 /// <reference lib="dom" />
 
 import { expect, test } from 'bun:test'
-import { SmallLayout, MediumLayout, LargeLayout } from '~/components/layouts'
+import { SmallLayout, MediumLayout, LargeLayout } from '@nurl/ganglion'
 
 test('SmallLayout', () => {
-  expect(SmallLayout).not.toBeUndefined()
+  expect(SmallLayout).toBeDefined()
 })
 
 test('MediumLayout', () => {
-  expect(MediumLayout).not.toBeUndefined()
+  expect(MediumLayout).toBeDefined()
 })
 
 test('LargeLayout', () => {
-  expect(LargeLayout).not.toBeUndefined()
+  expect(LargeLayout).toBeDefined()
 })

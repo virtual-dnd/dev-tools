@@ -1,11 +1,63 @@
 {
   "name": "@nurl/ganglion",
-  "module": "index.ts",
+  "description": "The official Design System for Nurl.",
+  "author": "casey.baggz@nurl.app",
+  "bugs": {
+    "url": "https://github.com/virtual-dnd/dev-tools/issues"
+  },
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/virtual-dnd/dev-tools",
+    "directory": "packages/ganglion"
+  },
+  "license": "MIT",
+  "version": "0.0.1",
   "type": "module",
-  "devDependencies": {
-    "bun-types": "latest"
+  "module": "index.ts",
+  "main": "index.ts",
+  "sideEffects": false,
+  "browserlist": [
+    "last 2 versions",
+    "not dead",
+    "not < 2%"
+  ],
+  "exports": {
+    ".": {
+      "import": "./index.ts",
+      "require": "./index.ts"
+    }
+  },
+  "publishConfig": {
+    "access": "public",
+    "main": "build/index.js",
+    "module": "build/index.mjs",
+    "types": "build/index.d.ts",
+    "exports": {
+      ".": {
+        "import": "./build/index.mjs",
+        "require": "./build/index.js"
+      }
+    }
+  },
+  "files": [
+    "build",
+    "index.ts",
+    "src"
+  ],
+  "scripts": {
+    "dev": "bun bun index.ts",
+    "build": "bun run bun.config.ts",
+    "lint": "eslint --ext .ts,.tsx,.js ."
+  },
+  "dependencies": {
+    "solid-js": "^1.7.12"
   },
   "peerDependencies": {
+    "solid-js": "*"
+  },
+  "devDependencies": {
+    "bun-types": "latest",
     "typescript": "^5.0.0"
   }
 }
