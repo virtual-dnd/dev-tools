@@ -1,7 +1,7 @@
 {
-  "compilerOptions": {
-    "outDir": "build",
+  "exclude": ["node_modules", "build"],
 
+  "compilerOptions": {
     "lib": ["ESNext"],
     "module": "esnext",
     "target": "esnext",
