@@ -1,0 +1,21 @@
+{
+    "name": "nurl-theme",
+    "displayName": "Nurl Theme",
+    "description": "Official VS-Code theme of the Nurl TTRPG App",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.46.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Night Nurl",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Night Nurl-color-theme.json"
+            }
+        ]
+    }
+}

@@ -8,17 +8,27 @@ jobs:
     name: JS valid
     steps:
       - uses: actions/checkout@v4
-      - uses: oven-sh/setup-bun@v1
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8
+      - uses: actions/setup-node@v3
+        with:
+          cache: 'pnpm'
 
-      - run: bun install
-      - run: bun run lint:js
+      - run: pnpm install
+      - run: pnpm run lint:js
 
   lint-ts:
     runs-on: ubuntu-latest
     name: TS valid
     steps:
       - uses: actions/checkout@v4
-      - uses: oven-sh/setup-bun@v1
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8
+      - uses: actions/setup-node@v3
+        with:
+          cache: 'pnpm'
 
-      - run: bun install
-      - run: bun run lint:ts
+      - run: pnpm install
+      - run: pnpm run lint:ts

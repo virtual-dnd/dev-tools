@@ -1,36 +1,19 @@
 {
-  "name": "virtual-dnd",
-  "version": "0.0.1",
-  "description": "Virtual Dnd dev tools to help developers build and create new extensions for anyone to use.",
-  "module": "index.ts",
+  "name": "nurl",
+  "version": "0.0.0",
+  "description": "Nurl open source tools to help developers build and create new extensions for anyone to use.",
   "type": "module",
-  "keywords": [
-    "virtual",
-    "dnd",
-    "solid",
-    "typescript",
-    "dev",
-    "tools",
-    "vdd dev tools"
-  ],
-  "files": [
-    "build",
-    "index.ts",
-    "src/**/*"
+  "workspaces": [
+    "packages/*"
   ],
   "scripts": {
-    "build": "bun build ./index.ts --outdir ./build --jsx-import-source solid-js",
     "lint:js": "eslint --max-warnings=0 --ext .js,.ts,.tsx .",
     "lint:ts": "tsc --noEmit",
-    "prepare": "husky install",
-    "test": "bun test --watch",
-    "test:ci": "bun test --coverage"
+    "prepare": "husky install"
   },
   "devDependencies": {
-    "@happy-dom/global-registrator": "^12.2.0",
     "@typescript-eslint/eslint-plugin": "^6.7.2",
     "@typescript-eslint/parser": "^6.7.2",
-    "bun-types": "latest",
     "eslint": "^8.50.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-solid": "^0.13.0",
@@ -47,5 +30,18 @@
   "lint-staged": {
     "*.{ts,tsx,js}": "eslint --cache --fix",
     "*.{ts,tsx,js,cjs,md}": "prettier --write"
-  }
+  },
+  "keywords": [
+    "nurl",
+    "ttrpg",
+    "dnd",
+    "pathfinder",
+    "warhammer",
+    "ttrpg",
+    "solid-js",
+    "typescript",
+    "dev",
+    "tools",
+    "nurl dev tools"
+  ]
 }

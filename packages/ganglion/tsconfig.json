@@ -1,23 +1,23 @@
 {
+  "exclude": ["node_modules", "build"],
+
   "compilerOptions": {
     "lib": ["ESNext"],
     "module": "esnext",
     "target": "esnext",
     "moduleResolution": "bundler",
     "moduleDetection": "force",
-
     "jsx": "preserve",
     "jsxImportSource": "solid-js",
-
     "allowImportingTsExtensions": true,
+
     "noEmit": true,
     "composite": true,
     "strict": true,
     "downlevelIteration": true,
     "skipLibCheck": true,
-
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
     "allowJs": true,
-  },
+  }
 }
