@@ -4,27 +4,16 @@
   "description": "Nurl open source tools to help developers build and create new extensions for anyone to use.",
   "type": "module",
   "workspaces": [
-    "packages/*",
-    "tests"
-  ],
-  "files": [
-    "build",
-    "index.ts",
-    "src/**/*"
+    "packages/*"
   ],
   "scripts": {
-    "build": "bun build ./index.ts --outdir ./build --jsx-import-source solid-js",
     "lint:js": "eslint --max-warnings=0 --ext .js,.ts,.tsx .",
     "lint:ts": "tsc --noEmit",
-    "prepare": "husky install",
-    "test": "bun test --watch",
-    "test:ci": "bun test --coverage"
+    "prepare": "husky install"
   },
   "devDependencies": {
-    "@happy-dom/global-registrator": "^12.2.0",
     "@typescript-eslint/eslint-plugin": "^6.7.2",
     "@typescript-eslint/parser": "^6.7.2",
-    "bun-types": "latest",
     "eslint": "^8.50.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-solid": "^0.13.0",
@@ -44,10 +33,12 @@
   },
   "keywords": [
     "nurl",
+    "ttrpg",
     "dnd",
+    "pathfinder",
     "warhammer",
     "ttrpg",
-    "solid",
+    "solid-js",
     "typescript",
     "dev",
     "tools",
