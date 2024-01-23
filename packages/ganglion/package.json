@@ -51,7 +51,7 @@
     "lint": "eslint --ext .ts,.tsx,.js ."
   },
   "dependencies": {
-    "solid-js": "^1.7.12"
+    "solid-js": "^1.8.12"
   },
   "peerDependencies": {
     "solid-js": "*"

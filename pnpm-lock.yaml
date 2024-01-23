@@ -33,8 +33,8 @@ importers:
         specifier: ^3.0.3
         version: 3.2.4
       solid-js:
-        specifier: ^1.7.12
-        version: 1.8.11
+        specifier: ^1.8.12
+        version: 1.8.12
       typescript:
         specifier: ^5.2.2
         version: 5.3.3
@@ -42,8 +42,8 @@ importers:
   packages/ganglion:
     dependencies:
       solid-js:
-        specifier: ^1.7.12
-        version: 1.8.11
+        specifier: ^1.8.12
+        version: 1.8.12
     devDependencies:
       bun-types:
         specifier: latest
@@ -1231,8 +1231,8 @@ packages:
       is-fullwidth-code-point: 5.0.0
     dev: true
 
-  /solid-js@1.8.11:
-    resolution: {integrity: sha512-WdwmER+TwBJiN4rVQTVBxocg+9pKlOs41KzPYntrC86xO5sek8TzBYozPEZPL1IRWDouf2lMrvSbIs3CanlPvQ==}
+  /solid-js@1.8.12:
+    resolution: {integrity: sha512-sLE/i6M9FSWlov3a2pTC5ISzanH2aKwqXTZj+bbFt4SUrVb4iGEa7fpILBMOxsQjkv3eXqEk6JVLlogOdTe0UQ==}
     dependencies:
       csstype: 3.1.3
       seroval: 1.0.4
