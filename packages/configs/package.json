@@ -1,0 +1,22 @@
+{
+  "name": "@nurl/configs",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Shared configs for the Nurl dev-tools repo.",
+  "type": "module",
+  "module": "index.mjs",
+  "main": "index.mjs",
+  "types": "index.d.ts",
+  "files": [
+    "index.mjs",
+    "src/**/*"
+  ],
+  "devDependencies": {
+    "bun-types": "latest",
+    "esbuild-plugin-file-path-extensions": "^1.0.0"
+  },
+  "peerDependencies": {
+    "tsup": "*",
+    "typescript": "*"
+  }
+}
