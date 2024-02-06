@@ -1,0 +1,84 @@
+{
+  "name": "@nurl/panda-preset",
+  "version": "0.1.0",
+  "description": "Official Panda-CSS preset for the Ganglion Design System.",
+  "author": "Nurl Developers",
+  "bugs": {
+    "url": "https://github.com/nurl-inc/dev-tools/issues"
+  },
+  "homepage": "https://nurl.website/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nurl-inc/dev-tools",
+    "directory": "packages/panda-preset"
+  },
+  "license": "Apache 2.0",
+  "browserslist": "> 0.25%, not dead",
+  "sideEffects": false,
+  "type": "module",
+  "main": "src/index.ts",
+  "module": "src/index.ts",
+  "publishConfig": {
+    "access": "public",
+    "types": "build/legacy/index.d.ts",
+    "main": "build/legacy/index.cjs",
+    "module": "build/legacy/index.js",
+    "exports": {
+      ".": {
+        "import": {
+          "types": "./build/modern/index.d.ts",
+          "default": "./build/modern/index.js"
+        },
+        "require": {
+          "types": "./build/modern/index.d.cts",
+          "default": "./build/modern/index.cjs"
+        }
+      },
+      "./package.json": "./package.json",
+      "./tsconfig.pando.json": "./tsconfig.pando.json"
+    },
+    "typesVersions": {
+      "*": {
+        ".": [
+          "build/legacy/index.d.ts"
+        ]
+      }
+    }
+  },
+  "files": [
+    "build/**/*",
+    "src/**/*",
+    "index.ts",
+    "tsconfig.pando.json"
+  ],
+  "scripts": {
+    "build": "tsup --experimental-dts",
+    "clean": "rm -rf ./build",
+    "lint:js": "eslint --max-warnings 0 \"./**/*.@(ts|tsx)\"",
+    "lint:ts": "tsc --project tsconfig.lint.json --noEmit",
+    "test": "jest --passWithNoTests"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "@pandacss/dev": "*",
+    "autoprefixer": "*",
+    "postcss": "*"
+  },
+  "devDependencies": {
+    "@microsoft/api-extractor": "^7.38.3",
+    "@pandacss/dev": "^0.27.1",
+    "@pandacss/types": "^0.27.1",
+    "@nurl/configs": "workspace:*",
+    "tsup": "^8.0.1"
+  },
+  "keywords": [
+    "nurl",
+    "ganglion",
+    "ganglion design system",
+    "panda-css",
+    "nurl preset",
+    "ganglion preset",
+    "panda-preset"
+  ],
+  "packageManager": "bun@1.0.23"
+}
