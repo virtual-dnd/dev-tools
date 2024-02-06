@@ -1,6 +1,6 @@
 export const conditions = {
   // themes
-  nurlTheme: '[data-theme=inkyBlue] &',
+  nurlTheme: '[data-theme=nurl] &',
 
   // modes
   lightMode: '[data-color-mode=light] &, &.light, .light &',

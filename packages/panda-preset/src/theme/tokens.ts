@@ -1,19 +1,19 @@
 export const fonts = {
   display: {
     description: 'Primary font reserved for display headings',
-    value: 'var(--font-pando)',
+    value: 'var(--font-nurl)',
   },
   sans: {
     description: 'Primary font used for body and headings',
-    value: 'var(--font-pando)',
+    value: 'var(--font-nurl)',
   },
   mono: {
     description: 'Code font used for any code related scenarios',
-    value: 'var(--font-pando-mono)',
+    value: 'var(--font-nurl-mono)',
   },
   monoStrong: {
     description: 'Code font used for any code related scenarios',
-    value: 'var(--font-pando-mono-strong)',
+    value: 'var(--font-nurl-mono-strong)',
   },
 }
 
