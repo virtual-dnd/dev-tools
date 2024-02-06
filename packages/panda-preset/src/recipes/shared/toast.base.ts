@@ -1,4 +1,4 @@
-import { Sentiment } from 'theme'
+import type { Sentiment } from '../../theme/semantic-tokens/types'
 import { getSlotRecipePalettes } from './helpers'
 
 export const SLOTS = [
