@@ -11,7 +11,7 @@ jobs:
     name: Ganglion successfully builds
     steps:
       - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v2
+      - uses: pnpm/action-setup@v3
         with:
           version: 8
       - uses: actions/setup-node@v3
@@ -27,7 +27,7 @@ jobs:
   #   name: Unit Tests
   #   steps:
   #     - uses: actions/checkout@v4
-  #     - uses: pnpm/action-setup@v2
+  #     - uses: pnpm/action-setup@v3
   #       with:
   #         version: 8
   #     - uses: actions/setup-node@v3
