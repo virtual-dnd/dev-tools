@@ -42,7 +42,7 @@ export const input = defineSlotRecipe({
     },
     startIcon: {
       ...inputIconProps,
-      left: '1rem',
+      left: '0.7rem',
     },
   },
 

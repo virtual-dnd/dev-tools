@@ -1,6 +1,6 @@
 {
   "name": "@nurl/panda-preset",
-  "version": "0.2.3",
+  "version": "0.3.3",
   "description": "Official Panda-CSS preset for the Ganglion Design System.",
   "author": "Nurl Developers",
   "bugs": {
@@ -66,8 +66,8 @@
   "devDependencies": {
     "@microsoft/api-extractor": "^7.40.3",
     "@nurl/configs": "workspace:*",
-    "@pandacss/dev": "^0.30.1",
-    "@pandacss/types": "^0.30.1",
+    "@pandacss/dev": "^0.32.0",
+    "@pandacss/types": "^0.32.0",
     "tsup": "^8.0.1"
   },
   "keywords": [
