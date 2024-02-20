@@ -116,9 +116,9 @@ export const actionTokens = defineSentiment({
       initial: {
         value: {
           _nurlTheme: {
-            base: '#E1DDF7',
+            base: '#101025',
             _lightMode: '#F4F7FA',
-            _darkMode: '#E1DDF7',
+            _darkMode: '#101025',
           },
         },
       },
