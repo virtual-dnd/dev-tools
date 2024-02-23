@@ -32,8 +32,32 @@ const scrollable = definePattern({
   },
 })
 
+const animateIn = definePattern({
+  description: 'A container that fades in the content',
+  properties: {
+    // The delay of the animation
+    delay: { type: 'string' },
+  },
+
+  // disallow the `overflow` property (in TypeScript)
+  blocklist: ['overflow'],
+
+  transform(props) {
+    const { delay, ...rest } = props
+    return {
+      animationName: 'fadeIn',
+      animationDuration: '2s',
+      animationFillMode: 'forwards',
+      animationDelay: delay ?? '200ms',
+      opacity: '0',
+      ...rest,
+    }
+  },
+})
+
 export const patterns = {
   extend: {
+    animateIn,
     scrollable,
   },
 }
