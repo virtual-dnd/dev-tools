@@ -14,13 +14,22 @@ export type Sentiment =
   | 'success'
   | 'warning'
   | 'danger'
+  | 'brand'
 
 /**
  * How a color is presented (can be a CSS property or HTML element).
  * @description **noun**, how something is used within an interface.
  * @readonly **required**
  */
-export type Usage = 'bg' | 'border' | 'navigation' | 'surface' | 'text'
+export type Usage = 'bg' | 'border' | 'navigation' | 'surface' | 'text' | Brand
+export type Brand =
+  | 'fourXBlue'
+  | 'oneUpPink'
+  | 'critHitGreen'
+  | 'manaBlue'
+  | 'n00bYellow'
+  | 'rageQuitRed'
+  | 'sandboxGold'
 
 /**
  * The use or level of emphasis of a color.
