@@ -13,6 +13,7 @@ import {
   successTokens,
   warningTokens,
   dangerTokens,
+  brandTokens,
 } from './theme/index'
 import { recipes, slotRecipes } from './recipes/index'
 
@@ -39,6 +40,7 @@ export const nurlPreset = definePreset({
         ...successTokens,
         ...warningTokens,
         ...dangerTokens,
+        ...brandTokens,
       },
     }),
   },
