@@ -64,7 +64,7 @@
     "postcss": "*"
   },
   "devDependencies": {
-    "@microsoft/api-extractor": "^7.40.6",
+    "@microsoft/api-extractor": "^7.42.3",
     "@nurl/configs": "workspace:*",
     "@pandacss/dev": "^0.32.0",
     "@pandacss/types": "^0.32.0",
