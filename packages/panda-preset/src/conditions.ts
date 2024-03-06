@@ -9,9 +9,10 @@ export const conditions = {
   // states
   modalOpen: '&:is([data-modal-open=true])',
   screenReaderOnly: '&:is([data-screen-reader-only=true])',
-  userInvalid: '&:is(:user-invalid, [aria-invalid=true])',
-  startIcon: '&:is([data-start-icon=true])',
-  online: '&:is([data-online=true])',
+  invalid: '&:is(:invalid, [data-invalid], [aria-invalid])',
+  userInvalid: '&:is(:user-invalid, [aria-invalid])',
+  groupInvalid: '.group:is([data-invalid] &, [aria-invalid]) &',
+  groupChecked: '.group:is([data-checked="true"] &, [aria-checked="true"]) &',
 
   // positions
   positionBottom: '&:is([data-position=bottom])',
