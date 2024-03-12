@@ -4,6 +4,21 @@ export function defineUtility<T extends UtilityConfig>(config: T) {
   return config
 }
 
+const mxi = defineUtility({
+  mxi: {
+    description:
+      'x-axis margin shorthand - used to set inline margin at the start and end of an element',
+    className: 'margin-inline-start-end',
+    values: 'spacing',
+    transform(value) {
+      return {
+        marginInlineStart: value,
+        marginInlineEnd: value,
+      }
+    },
+  },
+})
+
 const pxi = defineUtility({
   pxi: {
     description:
@@ -21,6 +36,7 @@ const pxi = defineUtility({
 
 export const utilities = {
   extend: {
+    ...mxi,
     ...pxi,
   },
 }
