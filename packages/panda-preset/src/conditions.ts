@@ -20,6 +20,9 @@ export const conditions = {
   positionLeft: '&:is([data-position=left])',
   positionRight: '&:is([data-position=right])',
 
+  // elements
+  startIcon: '&:is([data-start-icon=true])',
+
   // roles
   admin: '&:is([data-role=admin])',
   player: '&:is([data-role=player])',

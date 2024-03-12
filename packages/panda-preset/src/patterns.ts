@@ -51,6 +51,9 @@ const animateIn = definePattern({
       animationDelay: delay ?? '200ms',
       opacity: '0',
       ...rest,
+      _motionReduce: {
+        animationName: 'none',
+      },
     }
   },
 })
