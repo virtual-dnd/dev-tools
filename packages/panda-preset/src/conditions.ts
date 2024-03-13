@@ -27,4 +27,5 @@ export const conditions = {
   admin: '&:is([data-role=admin])',
   player: '&:is([data-role=player])',
   user: '&:is([data-role=user])',
+  nuro: '&:is([data-role=nuro])',
 }
