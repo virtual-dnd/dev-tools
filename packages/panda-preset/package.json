@@ -79,5 +79,5 @@
     "ganglion preset",
     "panda-preset"
   ],
-  "packageManager": "bun@1.0.23"
+  "packageManager": "pnpm@9.4.0"
 }
