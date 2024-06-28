@@ -22,10 +22,24 @@ export const conditions = {
 
   // elements
   startIcon: '&:is([data-start-icon=true])',
+  tooltip: '&:is([data-tooltip=true])',
 
   // roles
   admin: '&:is([data-role=admin])',
   player: '&:is([data-role=player])',
   user: '&:is([data-role=user])',
   nuro: '&:is([data-role=nuro])',
+
+  // highlights
+  highlight: '&:is(::selection)',
+  spellingError: '&:is(::spelling-error)',
+  grammarError: '&:is(::grammar-error)',
+
+  // palettes
+  neutralPalette: '&:is([data-palette=neutral])',
+  actionPalette: '&:is([data-palette=action])',
+  infoPalette: '&:is([data-palette=info])',
+  successPalette: '&:is([data-palette=success])',
+  warningPalette: '&:is([data-palette=warning])',
+  dangerPalette: '&:is([data-palette=danger])',
 }
